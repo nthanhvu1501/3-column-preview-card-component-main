@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+
+body {
+  background-color: #f2f2f2;
+}
+
+body, button {
+  font-family: "Lexend Deca", sans-serif;
+}
+
+h1 {
+  font-family: "Big Shoulders Display", cursive;
+  text-transform: uppercase;
+  font-size: 30px;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.container {
+  padding: 88px 20px;
+}
+.container .card {
+  padding: 50px;
+}
+.container .card img {
+  margin-bottom: 40px;
+}
+.container .card h1 {
+  margin-bottom: 40px;
+}
+.container .card p {
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.75);
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+.container .card .btn {
+  border: 2px solid rgba(255, 255, 255, 0.75);
+  border-radius: 30px;
+  padding: 18px 33px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.container .card .btn:hover {
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.card:nth-of-type(1) {
+  background-color: #e38826;
+  border-radius: 10px 10px 0 0;
+}
+.card:nth-of-type(1) .btn {
+  color: #e38826;
+}
+
+.card:nth-of-type(2) {
+  background-color: #006970;
+}
+.card:nth-of-type(2) .btn {
+  color: #006970;
+}
+
+.card:nth-of-type(3) {
+  background-color: #004241;
+  border-radius: 0 0 10px 10px;
+}
+.card:nth-of-type(3) .btn {
+  color: #004241;
+}
+
+@media (min-width: 992px) {
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 900px;
+    margin: auto;
+  }
+  .container .card {
+    padding: 45px;
+    height: 500px;
+  }
+  .container .card p {
+    margin-bottom: 90px;
+  }
+
+  .card:nth-of-type(1) {
+    border-radius: 10px 0 0 10px;
+  }
+
+  .card:nth-of-type(3) {
+    border-radius: 0 10px 10px 0;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

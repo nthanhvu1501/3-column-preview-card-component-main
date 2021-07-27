@@ -1,0 +1,111 @@
+// ### Primary
+
+$BrightOrange: hsl(31, 77%, 52%);
+$DarkCyan: hsl(184, 100%, 22%);
+$VeryDarkCyan: hsl(179, 100%, 13%);
+
+// ### Neutral
+
+$TransparentWhite: hsla(0, 0%, 100%, 0.75);
+$VeryLightGray: hsl(0, 0%, 95%);
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+body {
+    background-color: $VeryLightGray;
+}
+body, button {
+    font-family: 'Lexend Deca', sans-serif;
+}
+h1 {
+    font-family: 'Big Shoulders Display', cursive;
+    text-transform: uppercase;
+    font-size: 30px;
+    color: $TransparentWhite;
+}
+
+
+.container {
+    padding: 88px 20px;
+    .card {
+        padding: 50px;
+        img {
+            margin-bottom: 40px;
+        }
+        h1 {
+            margin-bottom: 40px;
+        }
+        p {
+            font-size: 15px;
+            color: $TransparentWhite;
+            margin-bottom: 30px;
+            line-height: 1.6;
+
+        }
+        .btn {
+            border: 2px solid $TransparentWhite;
+            border-radius: 30px;
+            padding: 18px 33px;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+            &:hover {
+                background-color: transparent;
+                color: $TransparentWhite;
+            }
+        }
+    } 
+}
+.card:nth-of-type(1) {
+    background-color: $BrightOrange;
+    border-radius: 10px 10px 0 0;
+    .btn {
+        color: $BrightOrange;
+    }
+}
+.card:nth-of-type(2) {
+    background-color: $DarkCyan;
+    .btn {
+        color: $DarkCyan;
+    }
+}
+.card:nth-of-type(3) {
+    background-color: $VeryDarkCyan;
+    border-radius: 0 0 10px 10px;
+    .btn {
+        color: $VeryDarkCyan;
+    }
+
+}
+@media (min-width: 992px) {
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        // min-height: 100vh;
+        max-width: 900px;
+        margin: auto;
+        .card {
+            padding: 45px;
+            height: 500px;
+            p {
+                margin-bottom: 90px;
+            }
+        }
+    }
+    .card:nth-of-type(1) {
+        border-radius: 10px 0 0 10px;
+    }
+    .card:nth-of-type(3) {
+        border-radius: 0 10px 10px 0;
+    }
+    
+}
+// @media (min-width: 1280px) {
+//     .container {
+//         max-width: 1200px;
+//     }
+// }
